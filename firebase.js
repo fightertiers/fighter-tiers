@@ -10,12 +10,12 @@ import {
 } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_AUTH_DOMAIN',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_STORAGE_BUCKET',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID'
+  apiKey: "AIzaSyCYg8cOHAq36074tyuTyrcGGIppnPQpTL0",
+  authDomain: "fighter-tiers.firebaseapp.com",
+  projectId: "fighter-tiers",
+  storageBucket: "fighter-tiers.firebasestorage.app",
+  messagingSenderId: "14653168345",
+  appId: "1:14653168345:web:457731ddc8d18b1b5a3cc8"
 };
 
 const app = initializeApp(firebaseConfig);
