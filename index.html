@@ -58,5 +58,30 @@
   <p>A-10 Warthog</p>
 </div>
 
+<body>
+
+<div class="background"></div>
+
+<header>
+  <h1>✈️ Fighter Tiers</h1>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Search Pilot"
+  >
+
+  <div class="filters">
+    <button onclick="filterTier('all')">ALL</button>
+    <button onclick="filterTier('ht1')">HT1</button>
+    <button onclick="filterTier('lt1')">LT1</button>
+    <button onclick="filterTier('ht2')">HT2</button>
+    <button onclick="filterTier('lt2')">LT2</button>
+  </div>
+</header>
+
+<div id="leaderboard"></div>
+
+<script type="module" src="script.js"></script>
 </body>
 </html>
