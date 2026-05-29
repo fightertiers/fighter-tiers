@@ -1,69 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fighter Tiers</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<h1>✈️ Fighter Tiers</h1>
-
-<div class="tier red">
-  <h2>LT5</h2>
-  <p>F-100 Super Sabre</p>
-</div>
-
-<div class="tier orange">
-  <h2>HT5</h2>
-  <p>F-5 Freedom Fighter</p>
-</div>
-
-<div class="tier yellow">
-  <h2>LT4</h2>
-  <p>F-111 Aardvark</p>
-</div>
-
-<div class="tier green">
-  <h2>HT4</h2>
-  <p>F/A-18 Hornet</p>
-</div>
-
-<div class="tier blue">
-  <h2>LT3</h2>
-  <p>EA-18G Growler</p>
-</div>
-
-<div class="tier purple">
-  <h2>HT3</h2>
-  <p>YF-23 Black Widow II</p>
-</div>
-
-<div class="tier black">
-  <h2>LT2</h2>
-  <p>B-2 Spirit</p>
-</div>
-
-<div class="tier gold">
-  <h2>HT2</h2>
-  <p>F-22 Raptor</p>
-</div>
-
-<div class="tier silver">
-  <h2>LT1</h2>
-  <p>F-15C Eagle</p>
-</div>
-
-<div class="tier fire">
-  <h2>HT1</h2>
-  <p>A-10 Warthog</p>
-</div>
-
 <body>
 
 <div class="background"></div>
 
 <header>
   <h1>✈️ Fighter Tiers</h1>
+  <p>Competitive Fighter Pilot Rankings</p>
 
   <input
     type="text"
@@ -73,15 +22,57 @@
 
   <div class="filters">
     <button onclick="filterTier('all')">ALL</button>
-    <button onclick="filterTier('ht1')">HT1</button>
-    <button onclick="filterTier('lt1')">LT1</button>
-    <button onclick="filterTier('ht2')">HT2</button>
+    <button onclick="filterTier('lt5')">LT5</button>
+    <button onclick="filterTier('ht5')">HT5</button>
+    <button onclick="filterTier('lt4')">LT4</button>
+    <button onclick="filterTier('ht4')">HT4</button>
+    <button onclick="filterTier('lt3')">LT3</button>
+    <button onclick="filterTier('ht3')">HT3</button>
     <button onclick="filterTier('lt2')">LT2</button>
+    <button onclick="filterTier('ht2')">HT2</button>
+    <button onclick="filterTier('lt1')">LT1</button>
+    <button onclick="filterTier('ht1')">HT1</button>
   </div>
 </header>
 
-<div id="leaderboard"></div>
+<section class="stats">
+  <div class="stat-card">
+    <h2 id="playerCount">0</h2>
+    <p>Total Pilots</p>
+  </div>
 
-<script type="module" src="script.js"></script>
+  <div class="stat-card">
+    <h2 id="testerCount">0</h2>
+    <p>Testers</p>
+  </div>
+
+  <div class="stat-card">
+    <h2 id="topTier">HT1</h2>
+    <p>Highest Tier</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🏆 Top Pilots</h2>
+  <div id="leaderboard"></div>
+</section>
+
+<section>
+  <h2 class="section-title">🛡️ Queue Status</h2>
+
+  <div class="queue-box">
+    <p id="queueStatus">Queue Closed</p>
+  </div>
+</section>
+
+<div id="profileModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeProfile()">&times;</span>
+
+    <div id="profileContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
