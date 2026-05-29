@@ -1,90 +1,30 @@
-```css
 body {
-  margin: 0;
-  padding: 0;
-  background: #0f1117;
+  background: #111;
   color: white;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  text-align: center;
-  padding: 40px 20px;
+  font-family: Arial;
+  padding: 20px;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-main {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-  padding-bottom: 50px;
+  text-align: center;
 }
 
 .tier {
   padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  transition: transform 0.2s;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-.tier:hover {
-  transform: scale(1.02);
-}
-
-.tier h2 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.tier p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-
-.red {
-  background: #8b0000;
-}
-
-.orange {
-  background: #ff6600;
-}
-
-.yellow {
-  background: #b8a100;
-}
-
-.green {
-  background: #008a2e;
-}
-
-.blue {
-  background: #005eff;
-}
-
-.purple {
-  background: #6a00cc;
-}
-
-.black {
-  background: #222;
-}
-
-.gold {
-  background: goldenrod;
-  color: black;
-}
-
-.silver {
-  background: silver;
-  color: black;
-}
-
+.red { background: #8b0000; }
+.orange { background: #ff6600; }
+.yellow { background: #999900; }
+.green { background: #006600; }
+.blue { background: #0044cc; }
+.purple { background: #660099; }
+.black { background: #222; }
+.gold { background: goldenrod; }
+.silver { background: gray; }
 .fire {
-  background: linear-gradient(90deg, red, orange, yellow);
+  background: linear-gradient(to right, red, orange, yellow);
   color: black;
 }
-```
