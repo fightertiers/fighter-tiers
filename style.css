@@ -28,3 +28,8 @@ h1 {
   background: linear-gradient(to right, red, orange, yellow);
   color: black;
 }
+.background {
+  position: fixed;
+  width: 100%;
+  hei
+}
